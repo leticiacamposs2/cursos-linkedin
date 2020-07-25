@@ -47,14 +47,35 @@
 // console.log(theBiggest(a, b));
 
 
-var theBiggest = function (a, b) {
+// var theBiggest = function (a, b) {
+//     var result;
+//     a > b ? result = ["a", a] : result = ["b", b];
+//     return result;
+// };
+
+// console.log(theBiggest(7/9, 13/25));
+
+
+
+// var theBiggest = function (a, b) {
+//     var result;
+//     a > b ? result = ["a", a] : result = ["b", b];
+//     return result;
+// };
+
+// // dessa forma eu retorno o valor da variavel que é uma função
+// console.log(theBiggest);
+
+
+var theBiggest = (function (a, b) {
     var result;
     a > b ? result = ["a", a] : result = ["b", b];
     return result;
-};
+})(7/9, 13/25);
 
-console.log(theBiggest(7/9, 13/25));
-
+// dessa forma eu retorno o resultado da funcao que esta dentro da variavel thebiggest
+// esta é uma funcao imediatamente invocada, aonde ela esta, o que na primeira funcao ela nao vai sofrer modificacao que tiver abaixo
+console.log(theBiggest);
 
 
 
