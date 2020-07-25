@@ -21,17 +21,40 @@
 //     console.log("12 dividido por 0.75 é: ", resultado);
 // }())
 
-function findBiggestFraction(a, b) {
-    var result;
-    a > b ? result = ["firstFraction: " + a] : result = ["secondFraction: " + b];
-    return result;
-}
+// function findBiggestFraction(a, b) {
+//     var result;
+//     a > b ? result = ["firstFraction: " + a] : result = ["secondFraction: " + b];
+//     return result;
+// }
 
-var firstFraction = 3/4;
-var secondFraction = 5/7;
+// var firstFraction = 3/4;
+// var secondFraction = 5/7;
 
-var fractionResult = findBiggestFraction(firstFraction, secondFraction);
-console.log(fractionResult);
+// var fractionResult = findBiggestFraction(firstFraction, secondFraction);
+// console.log(fractionResult);
 
 // findBiggestFraction(firstFraction, secondFraction);
+
+// var a = 5/7;
+// var b = 18/25;
+
+// var theBiggest = function() {
+//     var result;
+//     a > b ? result = ["a", a] : result = ["b", b];
+//     return result;
+// };
+
+// console.log(theBiggest(a, b));
+
+
+var theBiggest = function (a, b) {
+    var result;
+    a > b ? result = ["a", a] : result = ["b", b];
+    return result;
+};
+
+console.log(theBiggest(7/9, 13/25));
+
+
+
 
