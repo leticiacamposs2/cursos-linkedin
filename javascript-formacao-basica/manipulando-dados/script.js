@@ -22,4 +22,9 @@ var escQuote = "Citações também podem ser \"assim\".";
 var theSunIsWarm = true;
 var theMoonIsMadeOfCheese = false;
 
+// Operações matemáticas
 
+a++; // Pegue o valor original e depois adicione 1 a ele
+++a; // Adicione 1 ao valor
+
+// NaN === uma ou mais variaveis contem uma string
