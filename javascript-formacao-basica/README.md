@@ -23,4 +23,14 @@ O JavaScript é uma linguagem de script para páginas web. À medida que a web e
     - [x] Tipos de dados que podem ser armazenados em variáveis
     - [x] Matemática básica: usando operadores aritméticos
     - [x] Como interagir com números e strings
+    - [x] Teste condições utilizando operadores lógicos
+    - [x] Teste condições avançados utilizando operadores lógicos
+    - [x] Armazena vários itens de uma vez só com arrays (vetores e matrizes)
+    - [x] Propriedades e métodos dos arrays
 
+- [x] 4. Funções e objetos
+    - [x] Estruture e reutilize suas instruções com funções
+    - [x] Crie uma função nomeada básica 
+    - [x] Adicione argumentos a uma função
+    - [x] Retorne os valores de uma função
+    - [x] Como funcionam as funções anônimas
