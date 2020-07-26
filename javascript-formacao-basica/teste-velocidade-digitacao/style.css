@@ -154,6 +154,7 @@ body {
 }
 
 .test-wrapper {
+    height: 200%;
     display: flex;
 }
 
