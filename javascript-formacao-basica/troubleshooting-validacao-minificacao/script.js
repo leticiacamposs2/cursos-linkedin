@@ -1,10 +1,10 @@
 const testWrapper = document.querySelector(".test-wrapper");
-const testArea = document.querySelector("#test-area");
+const testArea = document.querySelector("#test-area")
 const originText = document.querySelector("#origin-text p").innerHTML;
 const resetButton = document.querySelector("#reset");
 const theTimer = document.querySelector(".timer");
 
-var timer = [0, 0, 0, 0];
+timer = [0, 0, 0, 0]
 var interval;
 var timerRunning = false;
 
@@ -25,22 +25,20 @@ function runTimer() {
     timer[0] = Math.floor((timer[3] / 100) / 60);
     timer[1] = Math.floor((timer[3] / 100) - (timer[0] * 60));
     timer[2] = Math.floor(timer[3] - (timer[1] * 100) - (timer[0] * 6000));
-
 }
 
 // Verifica se texto digitado com o fornecido na página:
 function spellCheck() {
     let textEntered = testArea.value;
-
     let originTextMatch = originText.substring(0, textEntered.length);
+    let textMatch;
 
     if (textEntered == originText) {
-        console.info("Interval stopped: ", interval);
         clearInterval(interval);
         testWrapper.style.borderColor = "#429890";
     } else {
         if (textEntered == originTextMatch) {
-            testWrapper.style.borderColor = "#65CCf3" + originTextMatch + "more string";
+            testWrapper.style.borderColor = "#65CCf3";
         } else {
             testWrapper.style.borderColor = "#E95D0F";
         }
@@ -48,14 +46,15 @@ function spellCheck() {
 
 }
 
-// Inicia o timer:
+
+// Inicia o cronômetro:
 function start() {
     let textEnteredLength = testArea.value.length;
     if (textEnteredLength === 0 && !timerRunning) {
         timerRunning = true;
         interval = setInterval(runTimer, 10);
-        console.info(interval);
     }
+    console.log(textEnteredLength);
 }
 
 // Função de recomeçar:
@@ -66,11 +65,11 @@ function reset() {
     timerRunning = false;
 
     testArea.value = "";
-    theTimer.innerHTML = "00:00:00";
+    theTimer.innerHTML = '00:00:00';
     testWrapper.style.borderColor = "grey";
 }
 
 // Listeners de eventos para entrada de teclado e o botão de recomeçar:
 testArea.addEventListener("keypress", start, false);
-testArea.addEventListener("keyup", spellCheck, false);
+testArea.addEventListener("keyup", spellCheck);
 resetButton.addEventListener("click", reset, false);
