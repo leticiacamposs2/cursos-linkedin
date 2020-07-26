@@ -9,4 +9,4 @@ else{
     CTAELEMENT.setAttribute("target", "_blank");
 }
 
-// -------------------------------------------
+console.log(CTAELEMENT.attributes);
